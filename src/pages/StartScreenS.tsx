@@ -30,21 +30,21 @@ const StartScreenS: React.FC = () => {
       />
       
       {/* Main content */}
-      <div className="relative z-10 text-center px-4">
+      <div className="relative z-10 w-full max-w-5xl text-center px-4 py-8 sm:py-12">
         {/* Gold winged emblem */}
-        <div className="gold-bezel inline-block px-12 py-8 mb-8 rounded-lg">
-          <div className="flex items-center justify-center gap-4">
+        <div className="gold-bezel inline-block max-w-full px-4 py-5 sm:px-12 sm:py-8 mb-6 sm:mb-8 rounded-lg">
+          <div className="flex items-center justify-center gap-2 sm:gap-4">
             {/* Left wing */}
             <div 
-              className="w-20 h-20 bg-gradient-to-br from-white to-gray-300 transform -skew-x-12 rounded-lg" 
+              className="hidden sm:block w-20 h-20 bg-gradient-to-br from-white to-gray-300 transform -skew-x-12 rounded-lg"
               style={{ clipPath: 'polygon(0 50%, 50% 0, 100% 50%, 50% 100%)' } as CSSProperties} 
             />
             
             {/* Center emblem */}
             <div className="relative">
-              <div className="w-32 h-32 rounded-full bg-gradient-to-br from-blue-600 via-purple-600 to-pink-600 flex items-center justify-center border-8 border-yellow-300 shadow-2xl">
-                <div className="w-24 h-24 rounded-full bg-gradient-to-br from-red-600 to-orange-500 flex items-center justify-center border-4 border-white">
-                  <span className="text-4xl font-bold text-white pixel-glow-text" style={{ fontFamily: "'Press Start 2P', cursive" }}>M</span>
+              <div className="w-24 h-24 sm:w-32 sm:h-32 rounded-full bg-gradient-to-br from-blue-600 via-purple-600 to-pink-600 flex items-center justify-center border-4 sm:border-8 border-yellow-300 shadow-2xl">
+                <div className="w-16 h-16 sm:w-24 sm:h-24 rounded-full bg-gradient-to-br from-red-600 to-orange-500 flex items-center justify-center border-4 border-white">
+                  <span className="text-2xl sm:text-4xl font-bold text-white pixel-glow-text" style={{ fontFamily: "'Press Start 2P', cursive" }}>M</span>
                 </div>
               </div>
               {/* Stars around emblem */}
@@ -55,7 +55,7 @@ const StartScreenS: React.FC = () => {
             
             {/* Right wing */}
             <div 
-              className="w-20 h-20 bg-gradient-to-br from-white to-gray-300 transform skew-x-12 rounded-lg" 
+              className="hidden sm:block w-20 h-20 bg-gradient-to-br from-white to-gray-300 transform skew-x-12 rounded-lg"
               style={{ clipPath: 'polygon(0 50%, 50% 0, 100% 50%, 50% 100%)' } as CSSProperties} 
             />
           </div>
@@ -64,15 +64,15 @@ const StartScreenS: React.FC = () => {
         {/* Title with ribbon */}
         <div className="relative mb-6">
           <div className="absolute inset-0 bg-gradient-to-r from-transparent via-red-600 to-transparent h-20 transform -skew-y-2 opacity-80" />
-          <h1 className="relative text-6xl md:text-7xl font-bold pixel-glow-text text-yellow-300 mb-2" style={{ fontFamily: "'Press Start 2P', cursive", textShadow: '4px 4px 0 #0066cc, -2px -2px 0 #fff' }}>
+          <h1 className="relative break-words text-3xl sm:text-5xl md:text-7xl font-bold pixel-glow-text text-yellow-300 mb-2" style={{ fontFamily: "'Press Start 2P', cursive", textShadow: '4px 4px 0 #0066cc, -2px -2px 0 #fff' }}>
             MEDRENALINE
           </h1>
-          <div className="relative text-4xl md:text-5xl font-bold text-white" style={{ fontFamily: "'Press Start 2P', cursive", textShadow: '3px 3px 0 #8B6914' }}>2026</div>
+          <div className="relative text-2xl sm:text-4xl md:text-5xl font-bold text-white" style={{ fontFamily: "'Press Start 2P', cursive", textShadow: '3px 3px 0 #8B6914' }}>2026</div>
         </div>
 
         {/* Subtitle box */}
-        <div className="retro-panel max-w-2xl mx-auto px-8 py-6 mb-8">
-          <p className="text-2xl md:text-3xl text-white leading-relaxed" style={{ fontFamily: "'VT323', monospace" }}>
+        <div className="retro-panel max-w-2xl mx-auto px-4 sm:px-8 py-5 sm:py-6 mb-8">
+          <p className="text-xl sm:text-2xl md:text-3xl text-white leading-relaxed" style={{ fontFamily: "'VT323', monospace" }}>
             HOPE YOU GOT ENOUGH ADRENALINE
             FOR <span className="text-yellow-300 font-bold">FOUR DAYS</span> OF
             <br />
@@ -94,7 +94,7 @@ const StartScreenS: React.FC = () => {
 
         {/* Press Start blinking text */}
         {showPress && (
-          <p className="text-2xl text-cyan-300 animate-pulse" style={{ fontFamily: "'Press Start 2P', cursive" }}>
+          <p className="text-sm sm:text-2xl text-cyan-300 animate-pulse" style={{ fontFamily: "'Press Start 2P', cursive" }}>
             GET THE RUSH
           </p>
         )}
@@ -104,12 +104,12 @@ const StartScreenS: React.FC = () => {
       <div className="absolute bottom-0 left-0 right-0 h-32 checkerboard border-t-4 border-yellow-400" />
       
       {/* Pixel sprite character */}
-      <div className="absolute bottom-32 left-10 sprite-bounce">
+      <div className="absolute bottom-32 left-4 sm:left-10 sprite-bounce">
         <div className="w-16 h-16 bg-blue-600 rounded-lg border-4 border-white shadow-xl" />
       </div>
       
       {/* Rings */}
-      <div className="absolute bottom-40 right-20 float-ring">
+      <div className="absolute bottom-40 right-4 sm:right-20 float-ring">
         <div className="w-12 h-12 border-8 border-yellow-400 rounded-full" />
       </div>
     </div>

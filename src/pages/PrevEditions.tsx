@@ -107,7 +107,7 @@ const PrevEditions = () => {
         <ParticlesBackground />
       </div>
 
-      <main className="relative z-[100] max-w-7xl mx-auto px-6 pt-28 pb-16 flex flex-col items-center">
+      <main className="relative z-[100] max-w-7xl mx-auto px-4 sm:px-6 pt-28 pb-16 flex flex-col items-center">
         
         <section className="text-center mb-16 w-full flex flex-col items-center">
           <h1
@@ -124,7 +124,7 @@ const PrevEditions = () => {
           </p>
         </section>
 
-        <section className="mb-20 quiz-modal bg-[#1e1e3a]/90 backdrop-blur-sm border-2 border-slate-700 p-8 rounded-lg shadow-2xl w-full max-w-4xl flex flex-col items-center">
+        <section className="mb-12 sm:mb-20 quiz-modal bg-[#1e1e3a]/90 backdrop-blur-sm border-2 border-slate-700 p-4 sm:p-8 rounded-lg shadow-2xl w-full max-w-4xl flex flex-col items-center">
           <h2 
             className="text-yellow-200 font-bold mb-4 text-center tracking-wider"
             style={{ fontFamily: "'Press Start 2P', cursive", fontSize: '16px' }}
@@ -152,7 +152,7 @@ const PrevEditions = () => {
           />
         </section>
 
-        <section className="mb-20 quiz-modal bg-[#1e1e3a]/90 backdrop-blur-sm border-2 border-slate-700 p-8 rounded-lg shadow-2xl w-full max-w-4xl flex flex-col items-center">
+        <section className="mb-12 sm:mb-20 quiz-modal bg-[#1e1e3a]/90 backdrop-blur-sm border-2 border-slate-700 p-4 sm:p-8 rounded-lg shadow-2xl w-full max-w-4xl flex flex-col items-center">
           <h2 
             className="text-yellow-200 font-bold mb-4 text-center tracking-wider"
             style={{ fontFamily: "'Press Start 2P', cursive", fontSize: '16px' }}
@@ -181,7 +181,7 @@ const PrevEditions = () => {
           />
         </section>
 
-        <section className="mb-20 quiz-modal bg-[#1e1e3a]/90 backdrop-blur-sm border-2 border-slate-700 p-8 rounded-lg shadow-2xl w-full max-w-4xl flex flex-col items-center">
+        <section className="mb-12 sm:mb-20 quiz-modal bg-[#1e1e3a]/90 backdrop-blur-sm border-2 border-slate-700 p-4 sm:p-8 rounded-lg shadow-2xl w-full max-w-4xl flex flex-col items-center">
           <h2 
             className="text-yellow-200 font-bold mb-4 text-center tracking-wider"
             style={{ fontFamily: "'Press Start 2P', cursive", fontSize: '16px' }}

@@ -34,7 +34,7 @@ const WorkshopPage = () => {
       </div>
 
       {/* Page Content */}
-      <main className="relative z-[100] max-w-7xl mx-auto px-6">
+      <main className="relative z-[100] max-w-7xl mx-auto px-4 sm:px-6">
         {/* Title Section */}
         <section className="pt-28 pb-10 text-center flex flex-col items-center">
           <h1
@@ -125,7 +125,7 @@ const WorkshopPage = () => {
       {selectedWorkshop && (
         <div className="quiz-overlay z-[3000]" onClick={() => setSelectedWorkshop(null)}>
           <div
-            className="quiz-modal bg-[#1e1e3a]/95 border-4 border-slate-600 rounded-lg p-8 max-h-[85vh] overflow-y-auto scrollbar-none shadow-2xl max-w-2xl w-full"
+            className="quiz-modal bg-[#1e1e3a]/95 border-4 border-slate-600 rounded-lg p-4 sm:p-8 max-h-[85dvh] overflow-y-auto scrollbar-none shadow-2xl max-w-2xl w-full"
             onClick={(e) => e.stopPropagation()}
             style={{ msOverflowStyle: "none", scrollbarWidth: "none" }}
           >

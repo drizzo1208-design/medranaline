@@ -373,9 +373,9 @@ const HomePage = () => {
       </div>
 
       {/* Hero Section */}
-      <section className="relative min-h-[60vh] flex items-center justify-center overflow-hidden pt-20 pb-8">
+      <section className="relative min-h-[60vh] flex items-center justify-center overflow-hidden pt-20 lg:pt-24 pb-8">
         <div className="relative z-10 text-center container mx-auto px-4 max-w-4xl">
-          <div className="gold-bezel inline-block px-8 py-6 mb-6 rounded-lg">
+          <div className="gold-bezel inline-block max-w-full px-4 sm:px-8 py-4 sm:py-6 mb-6 rounded-lg">
              <div className="flex items-center justify-center gap-3">
                {/* Left wing */}
                {/* <div className="w-12 h-12 bg-gradient-to-br from-white to-gray-300 transform -skew-x-12 rounded-md" style={{ clipPath: 'polygon(0 50%, 50% 0, 100% 50%, 50% 100%)' }} /> */}
@@ -391,7 +391,7 @@ const HomePage = () => {
                {/* <div className="w-12 h-12 bg-gradient-to-br from-white to-gray-300 transform skew-x-12 rounded-md" style={{ clipPath: 'polygon(0 50%, 50% 0, 100% 50%, 50% 100%)' }} /> */}
              </div>
            </div>
-          <h1 className="text-4xl md:text-6xl mb-3 font-bold pixel-glow-text text-yellow-300" style={{ fontFamily: "'Press Start 2P', cursive" }}>
+          <h1 className="break-words text-3xl sm:text-4xl md:text-6xl mb-3 font-bold pixel-glow-text text-yellow-300" style={{ fontFamily: "'Press Start 2P', cursive" }}>
             MEDRENALINE
           </h1>
 
@@ -427,11 +427,11 @@ const HomePage = () => {
       </section>
 
       {/* About Medrenaline */}
-      <section className="py-16 relative">
+      <section className="py-10 sm:py-16 relative">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
-            <div className="retro-panel p-10">
-              <h2 className="text-3xl md:text-4xl font-bold mb-6 text-yellow-300" style={{ fontFamily: "'Press Start 2P', cursive" }}>
+            <div className="retro-panel p-5 sm:p-10">
+              <h2 className="text-xl sm:text-3xl md:text-4xl font-bold mb-6 text-yellow-300" style={{ fontFamily: "'Press Start 2P', cursive" }}>
                 About Medrenaline 2026
               </h2>
               <p className="text-2xl md:text-3xl mb-6 leading-relaxed text-slate-100" style={{ fontFamily: "'VT323', monospace" }}>
@@ -456,11 +456,11 @@ const HomePage = () => {
       </section>
 
       {/* About KMC */}
-      <section className="py-16 relative">
+      <section className="py-10 sm:py-16 relative">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto retro-panel overflow-hidden">
-            <div className="p-10 text-slate-100">
-              <h2 className="text-3xl md:text-4xl font-bold mb-6 text-yellow-300" style={{ fontFamily: "'Press Start 2P', cursive" }}>
+            <div className="p-5 sm:p-10 text-slate-100">
+              <h2 className="text-xl sm:text-3xl md:text-4xl font-bold mb-6 text-yellow-300" style={{ fontFamily: "'Press Start 2P', cursive" }}>
                 About KMC
               </h2>
               <p className="text-2xl md:text-3xl mb-6 leading-relaxed text-slate-100" style={{ fontFamily: "'VT323', monospace" }}>
@@ -489,8 +489,8 @@ const HomePage = () => {
           <div className="overflow-hidden">
             <div className="flex animate-scroll-x">
               {sponsors.concat(sponsors).map((sponsorUrl, index) => (
-                <div key={index} className="flex-shrink-0 mx-6">
-                  <Card className="w-40 h-40 flex items-center justify-center bg-slate-950/95 shadow-md overflow-hidden hover:scale-105 transition-transform duration-300 border-4 border-yellow-400">
+                <div key={index} className="flex-shrink-0 mx-3 sm:mx-6">
+                  <Card className="w-32 h-32 sm:w-40 sm:h-40 flex items-center justify-center bg-slate-950/95 shadow-md overflow-hidden hover:scale-105 transition-transform duration-300 border-4 border-yellow-400">
                     <img
                       src={sponsorUrl}
                       alt={`Sponsor Logo ${index + 1}`}
@@ -510,7 +510,7 @@ const HomePage = () => {
           <h2 className="text-3xl font-bold text-center mb-8 text-yellow-300" style={{ fontFamily: "'Press Start 2P', cursive" }}>
             Find Us
           </h2>
-          <div className="overflow-hidden shadow-lg max-w-5xl mx-auto transform transition duration-500 hover:scale-[1.02] border-8 border-yellow-400">
+          <div className="overflow-hidden shadow-lg max-w-5xl mx-auto transform transition duration-500 hover:scale-[1.02] border-4 sm:border-8 border-yellow-400">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.471927933441!2d80.2350!3d13.0722!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5265ff5c6ff8cf%3A0x1fbb6bc6fb1df5!2sKilpauk%20Medical%20College!5e0!3m2!1sen!2sin!4v1699999999999"
               width="100%"

@@ -189,7 +189,7 @@ const OtherEventsPage: React.FC = () => {
                    bg-[#1e1e3a] transform transition duration-300 hover:scale-105 cursor-pointer"
       >
         <img src={getEventImage()} alt={event.title} className="absolute inset-0 w-full h-full object-cover retro-pixel-image opacity-50" />
-        <div className="absolute inset-0 bg-black/40 flex flex-col justify-center items-center p-6 text-center">
+        <div className="absolute inset-0 bg-black/40 flex flex-col justify-center items-center p-4 sm:p-6 text-center">
           <div className="w-full">
             <h2 className="text-2xl font-bold text-white uppercase drop-shadow-lg" style={{ fontFamily: "'Press Start 2P', cursive", fontSize: '14px' }}>{mainTitle}</h2>
             <p className="text-xl text-gray-200 drop-shadow-lg mt-2" style={{ fontFamily: "'VT323', monospace" }}>{subTitle}</p>
@@ -218,7 +218,7 @@ const OtherEventsPage: React.FC = () => {
         </section>
 
         <section className="container mx-auto px-4 pt-4 pb-16">
-          <div className="flex flex-wrap justify-center gap-8">
+          <div className="flex flex-wrap justify-center gap-4 sm:gap-8">
             {events.map((event, idx) => (
               <EventCard key={idx} event={event} />
             ))}
@@ -276,7 +276,7 @@ const OtherEventsPage: React.FC = () => {
               )}
             </div>
 
-            <div className="quiz-buttons mt-6 flex justify-end gap-3 text-xl" style={{ fontFamily: "'VT323', monospace" }}>
+            <div className="quiz-buttons mt-6 flex flex-col sm:flex-row sm:justify-end gap-3 text-xl" style={{ fontFamily: "'VT323', monospace" }}>
               <button onClick={() => setSelectedEvent(null)} className="px-4 py-2 border border-slate-600 rounded-md text-slate-300 hover:bg-slate-800 transition-colors">
                 Close
               </button>

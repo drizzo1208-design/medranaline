@@ -178,7 +178,7 @@ const ContactUs: React.FC = () => {
             </h1>
 
             {/* Council Info */}
-            <div className="w-full max-w-xl p-6 retro-panel mb-8">
+            <div className="w-full max-w-xl p-4 sm:p-6 retro-panel mb-8">
               <h2 
                 className="text-xl md:text-2xl font-bold text-yellow-200"
                 style={{ fontFamily: "'Press Start 2P', cursive", fontSize: '14px' }}
@@ -187,7 +187,7 @@ const ContactUs: React.FC = () => {
               </h2>
               <a
                 href="mailto:studentcouncilkmc@gmail.com"
-                className="text-xl text-cyan-200 hover:text-blue-300 transition-colors flex items-center justify-center gap-2 mt-4"
+                className="break-all text-lg sm:text-xl text-cyan-200 hover:text-blue-300 transition-colors flex items-center justify-center gap-2 mt-4"
                 style={{ fontFamily: "'VT323', monospace" }}
               >
                 <Mail className="h-5 w-5" />
@@ -205,7 +205,7 @@ const ContactUs: React.FC = () => {
               </h3>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 {/* Naresh */}
-                <div className="retro-event-card p-6 text-center flex flex-col items-center">
+                <div className="retro-event-card p-4 sm:p-6 text-center flex flex-col items-center">
                   <h4 
                     className="text-xl font-bold text-yellow-200"
                     style={{ fontFamily: "'Press Start 2P', cursive", fontSize: '14px' }}
@@ -217,7 +217,7 @@ const ContactUs: React.FC = () => {
                       <Phone className="h-5 w-5 text-cyan-300" />
                       <span>8939276895</span>
                     </a>
-                    <a href="mailto:naresh123ch37@gmail.com" className="flex items-center justify-center gap-2.5 hover:text-blue-300 transition-colors">
+                    <a href="mailto:naresh123ch37@gmail.com" className="break-all flex items-center justify-center gap-2.5 hover:text-blue-300 transition-colors">
                       <Mail className="h-5 w-5 text-fuchsia-300" />
                       <span>naresh123ch37@gmail.com</span>
                     </a>
@@ -225,7 +225,7 @@ const ContactUs: React.FC = () => {
                 </div>
 
                 {/* Mahashwethha */}
-                <div className="retro-event-card p-6 text-center flex flex-col items-center">
+                <div className="retro-event-card p-4 sm:p-6 text-center flex flex-col items-center">
                   <h4 
                     className="text-xl font-bold text-yellow-200"
                     style={{ fontFamily: "'Press Start 2P', cursive", fontSize: '14px' }}
@@ -237,7 +237,7 @@ const ContactUs: React.FC = () => {
                       <Phone className="h-5 w-5 text-cyan-300" />
                       <span>7448833936</span>
                     </a>
-                    <a href="mailto:mahashwethha@gmail.com" className="flex items-center justify-center gap-2.5 hover:text-blue-300 transition-colors">
+                    <a href="mailto:mahashwethha@gmail.com" className="break-all flex items-center justify-center gap-2.5 hover:text-blue-300 transition-colors">
                       <Mail className="h-5 w-5 text-fuchsia-300" />
                       <span>mahashwethha@gmail.com</span>
                     </a>
@@ -247,7 +247,7 @@ const ContactUs: React.FC = () => {
             </div>
 
             {/* Write to Us */}
-            <div className="w-full max-w-xl p-6 retro-panel mb-12">
+            <div className="w-full max-w-xl p-4 sm:p-6 retro-panel mb-12">
               <h3 
                 className="text-lg font-bold text-yellow-200"
                 style={{ fontFamily: "'Press Start 2P', cursive", fontSize: '12px' }}
@@ -256,7 +256,7 @@ const ContactUs: React.FC = () => {
               </h3>
               <a
                 href="mailto:medrenaline.2025@gmail.com"
-                className="text-2xl text-blue-200 hover:underline flex items-center justify-center gap-2 mt-3 font-medium"
+                className="break-all text-xl sm:text-2xl text-blue-200 hover:underline flex items-center justify-center gap-2 mt-3 font-medium"
                 style={{ fontFamily: "'VT323', monospace" }}
               >
                 <Mail className="h-5 w-5" />
@@ -272,10 +272,10 @@ const ContactUs: React.FC = () => {
               >
                 Our Other Events
               </h3>
-              <div className="flex justify-center items-center gap-8 md:gap-12">
+              <div className="flex flex-wrap justify-center items-center gap-4 sm:gap-8 md:gap-12">
                 {/* AADUKALAM */}
                 <div
-                  className="w-48 h-48 bg-red-100 rounded-none flex items-center justify-center border-4 border-yellow-200 shadow-lg overflow-hidden cursor-pointer hover:scale-105 transition-transform"
+                  className="w-36 h-36 sm:w-48 sm:h-48 bg-red-100 rounded-none flex items-center justify-center border-4 border-yellow-200 shadow-lg overflow-hidden cursor-pointer hover:scale-105 transition-transform"
                   onClick={() =>
                     window.open(
                       "https://www.instagram.com/aadukalam.kmc?igsh=MXdsY3N1b3R5ODFraA==",
@@ -292,7 +292,7 @@ const ContactUs: React.FC = () => {
 
                 {/* PRAD */}
                 <div
-                  className="w-48 h-48 bg-blue-100 rounded-none flex items-center justify-center border-4 border-yellow-200 shadow-lg overflow-hidden cursor-pointer hover:scale-105 transition-transform"
+                  className="w-36 h-36 sm:w-48 sm:h-48 bg-blue-100 rounded-none flex items-center justify-center border-4 border-yellow-200 shadow-lg overflow-hidden cursor-pointer hover:scale-105 transition-transform"
                   onClick={() =>
                     window.open(
                       "https://www.instagram.com/pradharshini.kmc?igsh=MTdiMjVtbjhvajFqeA==",

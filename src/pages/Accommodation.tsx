@@ -37,7 +37,7 @@ const Accommodation: React.FC = () => {
 
         {/* Modal-themed Detail Container */}
         <section className="container mx-auto px-4 pb-16 max-w-3xl">
-          <div className="quiz-modal select-none w-full bg-[#1e1e3a]/90 backdrop-blur-sm border-2 border-slate-700 p-6 rounded-lg shadow-2xl">
+          <div className="quiz-modal select-none w-full bg-[#1e1e3a]/90 backdrop-blur-sm border-2 border-slate-700 p-4 sm:p-6 rounded-lg shadow-2xl">
             
             {/* Fee Section Header */}
             <div className="my-4 text-xl space-y-1 text-center border-b border-slate-700/50 pb-4" style={{ fontFamily: "'VT323', monospace" }}>
@@ -82,7 +82,7 @@ const Accommodation: React.FC = () => {
             </div>
 
             {/* Action Buttons styled identically to the modal layout */}
-            <div className="quiz-buttons mt-6 flex justify-end gap-3 text-xl" style={{ fontFamily: "'VT323', monospace" }}>
+            <div className="quiz-buttons mt-6 flex flex-col sm:flex-row sm:justify-end gap-3 text-xl" style={{ fontFamily: "'VT323', monospace" }}>
               <a
                 href="https://docs.google.com/forms/d/e/1FAIpQLSdGilzwtzgXAsKpHsHgqGc091knJoME0TeMc2V5g0LmtJbGtw/viewform?usp=header"
                 target="_blank"
