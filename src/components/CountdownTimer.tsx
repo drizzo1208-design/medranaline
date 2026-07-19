@@ -114,8 +114,8 @@ const CountdownTimer: React.FC = () => {
   }, [targetDate]);
 
   const TimeBox: React.FC<TimeBoxProps> = ({ value, label }) => (
-    <div className="pixel-countdown-box p-6 rounded-lg text-center min-w-[120px]">
-      <div className="text-5xl md:text-6xl font-bold text-cyan-300 mb-2" style={{ fontFamily: "'Press Start 2P', cursive", letterSpacing: '4px' }}>
+    <div className="pixel-countdown-box min-w-0 rounded-lg p-3 sm:p-6 text-center">
+      <div className="text-2xl sm:text-4xl md:text-6xl font-bold text-cyan-300 mb-2" style={{ fontFamily: "'Press Start 2P', cursive", letterSpacing: '2px' }}>
         {String(value).padStart(2, '0')}
       </div>
       <div className="text-lg md:text-xl text-yellow-200 uppercase tracking-wider" style={{ fontFamily: "'Press Start 2P', cursive", fontSize: '10px' }}>
@@ -125,12 +125,12 @@ const CountdownTimer: React.FC = () => {
   );
 
   return (
-    <div className="retro-panel p-8 md:p-12">
-      <h2 className="text-2xl md:text-3xl font-bold text-center text-yellow-300 mb-8" style={{ fontFamily: "'Press Start 2P', cursive" }}>
+    <div className="retro-panel p-4 sm:p-8 md:p-12">
+      <h2 className="text-lg sm:text-2xl md:text-3xl font-bold text-center text-yellow-300 mb-8" style={{ fontFamily: "'Press Start 2P', cursive" }}>
         EVENT STARTS IN
       </h2>
       
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto">
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-6 max-w-4xl mx-auto">
         <TimeBox value={timeLeft.days} label="DAYS" />
         <TimeBox value={timeLeft.hours} label="HOURS" />
         <TimeBox value={timeLeft.minutes} label="MINUTES" />

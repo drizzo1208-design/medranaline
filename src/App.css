@@ -1,10 +1,8 @@
 @import url('https://fonts.cdnfonts.com/css/fopi-rush');
 
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+  width: 100%;
+  min-height: 100vh;
 }
 
 .logo {
@@ -45,7 +43,7 @@
 
 @font-face {
     font-family: 'Ethnocentric';
-    src: url('./assets/fonts/Ethnocentric-RG.otf') format('opentype');
+    src: url('./assets/fonts/Ethnocentric-Rg.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
 }

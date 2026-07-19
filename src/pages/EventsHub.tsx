@@ -83,10 +83,10 @@ const EventsHub = () => {
       </div>
 
       {/* CORE CONTENT CANVAS LAYER */}
-      <main className="relative z-10 pt-28 pb-48 px-6 max-w-6xl mx-auto flex flex-col items-center">
+      <main className="relative z-10 pt-28 pb-48 px-4 sm:px-6 max-w-6xl mx-auto flex flex-col items-center">
         
         {/* Main Board Panel */}
-        <section className="bg-[#1e1e3a]/90 backdrop-blur-sm border-4 border-slate-700 p-6 md:p-8 shadow-2xl rounded-lg w-full text-center flex flex-col items-center">
+        <section className="bg-[#1e1e3a]/90 backdrop-blur-sm border-4 border-slate-700 p-4 sm:p-6 md:p-8 shadow-2xl rounded-lg w-full text-center flex flex-col items-center">
           <p 
             className="text-cyan-300 font-bold mb-4 tracking-[0.2em]" 
             style={{ fontFamily: "'Press Start 2P', cursive", fontSize: '10px' }}

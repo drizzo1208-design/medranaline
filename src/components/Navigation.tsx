@@ -119,16 +119,16 @@ const Navigation: React.FC = () => {
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 retro-nav">
-      <div className="container mx-auto px-4">
-        <div className="flex items-center justify-between h-20">
+      <div className="container mx-auto px-3 sm:px-4">
+        <div className="flex items-center justify-between h-16 lg:h-20">
           {/* Logo */}
-          <Link to="/home" className="flex items-center space-x-3">
-            <div className="gold-bezel px-4 py-2 rounded-md flex items-center gap-2">
+          <Link to="/home" className="flex min-w-0 items-center">
+            <div className="gold-bezel px-2.5 py-2 sm:px-4 rounded-md flex items-center gap-2">
               {/* <div className="w-8 h-8 rounded-full bg-gradient-to-br from-blue-600 via-purple-600 to-pink-600 flex items-center justify-center border-2 border-yellow-300">
                 <span className="text-sm font-bold text-white" style={{ fontFamily: "'Press Start 2P', cursive" }}>A</span>
               </div> */}
               <h1
-                className="text-lg md:text-xl font-bold text-white tracking-wide"
+                className="text-xs sm:text-base lg:text-xl font-bold text-white tracking-wide"
                 style={{ fontFamily: "'Press Start 2P', cursive" }}
               >
                 MEDRENALINE
@@ -137,7 +137,7 @@ const Navigation: React.FC = () => {
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-8">
+          <div className="hidden lg:flex items-center gap-5 xl:gap-8">
             {navItems.map((item) => (
               <Link
                 key={item.path}
@@ -158,8 +158,11 @@ const Navigation: React.FC = () => {
           <Button
             variant="ghost"
             size="sm"
-            className="md:hidden text-white hover:text-yellow-300"
+            className="lg:hidden h-11 w-11 shrink-0 text-white hover:text-yellow-300"
             onClick={() => setIsOpen(!isOpen)}
+            aria-expanded={isOpen}
+            aria-controls="mobile-navigation"
+            aria-label={isOpen ? "Close navigation menu" : "Open navigation menu"}
           >
             {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
           </Button>
@@ -167,13 +170,16 @@ const Navigation: React.FC = () => {
 
         {/* Mobile Navigation */}
         {isOpen && (
-          <div className="md:hidden py-4 border-t-4 border-yellow-400">
-            <div className="flex flex-col space-y-3">
+          <div
+            id="mobile-navigation"
+            className="lg:hidden max-h-[calc(100dvh-4rem)] overflow-y-auto border-t-4 border-yellow-400 py-3 pb-[max(1rem,env(safe-area-inset-bottom))]"
+          >
+            <div className="flex flex-col gap-1">
               {navItems.map((item) => (
                 <Link
                   key={item.path}
                   to={item.path}
-                  className={`px-4 py-2 text-sm font-bold transition-all duration-300 ${
+                  className={`min-h-11 px-4 py-3 text-left text-sm font-bold transition-all duration-300 ${
                     isActive(item.path)
                       ? "text-yellow-300"
                       : "text-white hover:text-yellow-200"
