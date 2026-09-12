@@ -59,7 +59,7 @@ const QuizPage = () => {
               <div
                 key={quiz.id}
                 onClick={() => setSelectedQuiz(quiz)}
-                className="relative overflow-hidden w-80 h-[380px] transform transition duration-300 hover:scale-105 cursor-pointer rounded-md border-4 border-slate-700 shadow-2xl bg-[#1e1e3a]"
+                className="relative overflow-hidden w-full max-w-[320px] h-[380px] transform transition duration-300 hover:scale-105 cursor-pointer rounded-md border-4 border-slate-700 shadow-2xl bg-[#1e1e3a]"
               >
                 <div className="relative w-full h-full">
                   {/* Background Image */}

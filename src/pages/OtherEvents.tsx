@@ -138,7 +138,8 @@ const OtherEventsPage: React.FC = () => {
           retro-event-card
           relative
           overflow-hidden
-          w-80
+          w-full
+          max-w-[320px]
           h-[380px]
           transform
           transition
