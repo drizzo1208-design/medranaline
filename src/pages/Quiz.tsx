@@ -54,7 +54,7 @@ const QuizPage = () => {
 
         {/* Quiz Cards Section */}
         <section className="container mx-auto pt-4 pb-16 flex justify-center">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 justify-items-center">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center w-full">
             {quizzes.map((quiz) => (
               <div
                 key={quiz.id}
@@ -62,17 +62,22 @@ const QuizPage = () => {
                 className="relative overflow-hidden w-80 h-[380px] transform transition duration-300 hover:scale-105 cursor-pointer rounded-md border-4 border-slate-700 shadow-2xl bg-[#1e1e3a]"
               >
                 <div className="relative w-full h-full">
-                  {/* Background Image with retro pixel shader look */}
+                  {/* Background Image */}
                   <img
                     src={quiz.image || "/placeholder.svg"}
                     alt={quiz.title}
                     className="absolute inset-0 w-full h-full object-cover retro-pixel-image opacity-70"
                   />
-                  {/* Darkened overlay shield for high contrast retro readability */}
+
+                  {/* Overlay */}
                   <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-900/40 to-transparent flex flex-col justify-end p-6">
-                    <h2 
+                    <h2
                       className="text-2xl font-bold text-yellow-300 text-center drop-shadow-md whitespace-pre-line tracking-wide"
-                      style={{ fontFamily: "'Press Start 2P', cursive", fontSize: '14px', lineHeight: '1.5' }}
+                      style={{
+                        fontFamily: "'Press Start 2P', cursive",
+                        fontSize: "14px",
+                        lineHeight: "1.5",
+                      }}
                     >
                       {quiz.title}
                     </h2>
@@ -82,6 +87,7 @@ const QuizPage = () => {
             ))}
           </div>
         </section>
+
       </main>
 
       {/* --- POPUP MODAL --- */}

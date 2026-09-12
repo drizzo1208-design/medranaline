@@ -53,72 +53,50 @@ const WorkshopPage = () => {
 
         {/* Workshop Cards Section */}
         <section className="container mx-auto pt-4 pb-16">
-          {/* Grid for all except last 2 */}
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 justify-items-center">
-            {workshops.slice(0, workshops.length - 2).map((ws) => (
+            {workshops.map((ws) => (
               <div
                 key={ws.id}
                 onClick={() => setSelectedWorkshop(ws)}
                 className="relative overflow-hidden w-full max-w-[280px] h-[360px] transform transition duration-300 hover:scale-105 cursor-pointer rounded-md border-4 border-slate-700 shadow-2xl bg-[#1e1e3a]"
               >
                 <div className="relative w-full h-full">
-                  <img
-                    src={ws.image || "/placeholder.svg"}
-                    alt={ws.title}
-                    className="absolute inset-0 w-full h-full object-cover retro-pixel-image opacity-60"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-900/40 to-transparent flex flex-col justify-end p-4">
-                    <h2 
-                      className="text-yellow-300 font-bold mb-1 tracking-wide"
-                      style={{ fontFamily: "'Press Start 2P', cursive", fontSize: '11px', lineHeight: '1.4' }}
-                    >
-                      {ws.title}
-                    </h2>
-                    <p 
-                      className="text-xl text-slate-300 line-clamp-2"
-                      style={{ fontFamily: "'VT323', monospace" }}
-                    >
-                      {ws.subtitle}
-                    </p>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
 
-          {/* Last Two Workshops Centered */}
-          <div className="mt-8 flex justify-center gap-8 flex-wrap">
-            {workshops.slice(-2).map((ws) => (
-              <div
-                key={ws.id}
-                onClick={() => setSelectedWorkshop(ws)}
-                className="relative overflow-hidden w-full sm:w-[280px] h-[360px] transform transition duration-300 hover:scale-105 cursor-pointer rounded-md border-4 border-slate-700 shadow-2xl bg-[#1e1e3a]"
-              >
-                <div className="relative w-full h-full">
                   <img
                     src={ws.image || "/placeholder.svg"}
                     alt={ws.title}
                     className="absolute inset-0 w-full h-full object-cover retro-pixel-image opacity-60"
                   />
+
                   <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-900/40 to-transparent flex flex-col justify-end p-4">
-                    <h2 
+
+                    <h2
                       className="text-yellow-300 font-bold mb-1 tracking-wide"
-                      style={{ fontFamily: "'Press Start 2P', cursive", fontSize: '11px', lineHeight: '1.4' }}
+                      style={{
+                        fontFamily: "'Press Start 2P', cursive",
+                        fontSize: "11px",
+                        lineHeight: "1.4",
+                      }}
                     >
                       {ws.title}
                     </h2>
-                    <p 
+
+                    <p
                       className="text-xl text-slate-300 line-clamp-2"
-                      style={{ fontFamily: "'VT323', monospace" }}
+                      style={{
+                        fontFamily: "'VT323', monospace",
+                      }}
                     >
                       {ws.subtitle}
                     </p>
+
                   </div>
                 </div>
               </div>
             ))}
           </div>
         </section>
+
       </main>
 
       {/* --- POPUP MODAL --- */}

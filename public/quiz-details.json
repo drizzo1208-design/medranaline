@@ -2,14 +2,14 @@
   "quizzes": [
     {
       "id": "senior",
-      "title": "Medrenaline'25 - Senior Quiz",
-      "date": "28th September 2025",
+      "title": "MEDRENALINE'26 - Senior Quiz",
+      "date": "11th October 2026",
       "time": "Prelims: 8:30 AM | Finals: 12 PM",
       "venue": "Auditorium, Kilpauk Medical College, Chennai",
       "rules": [
         "Each team may consist of maximum 3 members.",
-        "Participation is open to MBBS students from First Year to CRRI.",
-        "A maximum of 1 CRRI is permitted per team.",
+        "Participation is open to MBBS students from First Year to CRMI.",
+        "A maximum of 1 CRMI is permitted per team.",
         "Lone wolves are allowed.",
         "Cross-college teams are not allowed."
       ],
@@ -21,29 +21,29 @@
         "Top 6 teams from prelims qualify for finals."
       ],
       "fees": [
-        "Early Bird : ₹600",
-        "Lone Wolf: ₹400",
-        "Late Bird: ₹700",
-        "On Spot: ₹750"
+        "Early Bird : ₹640",
+        "Lone Wolf: ₹440",
+        "Late Bird: ₹730",
+        "On Spot: ₹770"
       ],
       "prizes": "Winning Prize (To be confirmed)",
       "incharges": [
-        "Bhaskar KK - 9742516192",
-        "Thamizhazhagan KC - 9345619439"
+        "Hemavarshini - 9080286422",
+        "Tanushri Badri - 9791044711"
       ],
-      "registrationLink": "https://docs.google.com/forms/d/e/1FAIpQLSfG2uEEdSNjLwmS3YG6oHrk4B3KEpvFRkrfSpnELu_9M4vyiQ/viewform?usp=header",
+      "registrationLink": "https://forms.gle/mN6K157QpL4TcACD9",
       "image": "/images/senior-quiz.jpg"
     },
     {
-      "id": "symbiosis25-junior",
-      "title": "Symbiosis’25 -\n Junior Quiz",
-      "date": "27th September 2025",
+      "id": "symbiosis26-junior",
+      "title": "SYMBIOSIS’26 -\n Junior Quiz",
+      "date": "10th October 2026",
       "time": "Prelims: 8:30 AM | Finals: 12 PM",
       "venue": "Auditorium, Kilpauk Medical College, Chennai",
       "rules": [
         "Each team may consist of maximum 3 members.",
-        "Open to MBBS students from First Year to Third Year (III MBBS Part 1 / Pre-final Year / 2022 Batch).",
-        "Maximum 2 members from Pre-final Year (2022 Batch) per team.",
+        "Open to MBBS students from 2026 to 2023 Batch.",
+        "Maximum one 2023 Batch student per team.",
         "Lone wolves are allowed.",
         "Cross-college teams are not allowed."
       ],
@@ -56,17 +56,52 @@
         "Top 6 teams from prelims qualify for finals."
       ],
       "fees": [
-        "Early Bird: ₹600",
-        "Lone Wolf: ₹400",
-        "Late Bird: ₹700",
-        "On Spot: ₹750"
+        "Early Bird: ₹640",
+        "Lone Wolf: ₹440",
+        "Late Bird: ₹730",
+        "On Spot: ₹770"
       ],
       "prizes": "Winning Prize (To be confirmed)",
       "incharges": [
-        "Rohith S - 9342515582",
-        "Nakhul R - 9345593261"
+        "Karthikeyan - 9360083272",
+        "Kavitha - 7397354921",
+        "Harisankar Das - 9043186174"
       ],
-      "registrationLink": "https://docs.google.com/forms/d/e/1FAIpQLScj1f4xxQYBgJ5rO0rhBVnwySggFnZrgHZBVXuA5IIEKDwyiQ/viewform?usp=header",
+      "registrationLink": "https://forms.gle/S83rLy4aPFgRVwPh8",
+      "image": "/images/junior-quiz.jpg"
+    },
+    {
+      "id": "Galenus'26-system",
+      "title": "GALENUS’26 -\n system Quiz",
+      "date": "prelims date : 27th September 2026 \n \n semi Finals & Grand Finale: 8th October 2026",
+      "time": ": 8:30 AM | Finals: 12 PM",
+      "venue": "OP Conference hall, Kilpauk Medical College, Chennai",
+      "rules": [
+        "Each team may consist of maximum 3 members.",
+        "Open to MBBS students from 1st year to CRMI.",
+        "Maximum one CRMI per team.",
+        "Lone wolves are allowed.",
+        "Cross-college teams are not allowed."
+      ],
+      "topics": [
+        "ENDOCRINOLOGY from all 19 subjects."
+    
+      ],
+      "structure": [
+        "Three rounds: Preliminary (online), semi-finals & Final.",
+        "Top 6 teams from semifinals qualify for finals."
+      ],
+      "fees": [
+        "Early Bird: ₹400",
+        "Lone Wolf: ₹250",
+        "Late Bird: ₹500"
+      ],
+      "prizes": "Winning Prize (To be confirmed)",
+      "incharges": [
+        "Monish - 8428821212",
+        "Fazil - 9952177972"
+      ],
+      "registrationLink": "https://forms.gle/HJ2DKdVUnbhjaPAj6",
       "image": "/images/junior-quiz.jpg"
     }
   ]

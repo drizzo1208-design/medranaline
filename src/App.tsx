@@ -67,6 +67,8 @@ import QuizPage from "./pages/Quiz";
 import EventsHub from "./pages/EventsHub";
 import WorkshopPage from "./pages/Workshops";
 
+import GlobalButtonSound from "./components/GlobalButtonSound"
+
 // const BACKEND_URL = process.env.REACT_APP_BACKEND_URL;
 // const API = `${BACKEND_URL}/api`;
 
@@ -94,6 +96,10 @@ function App(): typeof App.name extends string ? React.JSX.Element : never {
       
       <Toaster />
       <BrowserRouter>
+
+        {/* Global click sound */}
+        <GlobalButtonSound />
+
         <Routes>
           <Route path="/" element={<StartScreen />} />
           <Route path="/home" element={<HomePage />} />
