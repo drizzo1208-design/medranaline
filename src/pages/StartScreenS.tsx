@@ -2,6 +2,7 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { Button } from "../components/ui/button";
 import medrenalineBg from "../assets/medrenaline-bg.png";
+import medPulseIcon from "../assets/medlogo-yellow.png";
 import "./StartScreenS.css";
 
 const StartScreenS: React.FC = () => {
@@ -45,14 +46,21 @@ const StartScreenS: React.FC = () => {
         <div className="intro-content">
 
           {/* Title */}
-          <h1
-            className="intro-title"
-            style={{
-              fontFamily: "'Press Start 2P', cursive",
-            }}
-          >
-            MEDRENALINE
-          </h1>
+          <div className="intro-title-row">
+            <img
+              src={medPulseIcon}
+              alt=""
+              className="intro-title-icon"
+            />
+            <h1
+              className="intro-title"
+              style={{
+                fontFamily: "'Press Start 2P', cursive",
+              }}
+            >
+              MEDRENALINE
+            </h1>
+          </div>
 
           <div
             className="intro-year"
