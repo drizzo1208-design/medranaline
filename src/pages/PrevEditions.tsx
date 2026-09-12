@@ -129,6 +129,33 @@ const PrevEditions = () => {
             className="text-yellow-200 font-bold mb-4 text-center tracking-wider"
             style={{ fontFamily: "'Press Start 2P', cursive", fontSize: '16px' }}
           >
+            Medrenaline 2025
+          </h2>
+          <p 
+            className="text-center text-slate-200 text-2xl mb-8 max-w-3xl"
+            style={{ fontFamily: "'VT323', monospace" }}
+          >
+            Medrenaline 2025 set the stage for an unforgettable celebration of medicine, bringing together high-impact clinical workshops, spirited presentation events, and inspiring sessions that made learning truly memorable.
+          </p>
+          <ScrollingGallery
+            images={[
+              "/Prev_Editions/25/1.jpg",
+              "/Prev_Editions/25/3.jpg",
+              "/Prev_Editions/25/4.jpg",
+              "/Prev_Editions/25/5.jpg",
+              "/Prev_Editions/25/6.jpg",
+              "/Prev_Editions/25/8.jpg",
+              "/Prev_Editions/25/9.jpg",
+              "/Prev_Editions/25/10.jpg",
+            ]}
+          />
+        </section>
+
+        <section className="mb-20 quiz-modal bg-[#1e1e3a]/90 backdrop-blur-sm border-2 border-slate-700 p-8 rounded-lg shadow-2xl w-full max-w-4xl flex flex-col items-center">
+          <h2 
+            className="text-yellow-200 font-bold mb-4 text-center tracking-wider"
+            style={{ fontFamily: "'Press Start 2P', cursive", fontSize: '16px' }}
+          >
             Medrenaline 2024
           </h2>
           <p 

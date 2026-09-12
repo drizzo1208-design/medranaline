@@ -435,20 +435,16 @@ const HomePage = () => {
                 About Medrenaline 2026
               </h2>
               <p className="text-2xl md:text-3xl mb-6 leading-relaxed text-slate-100" style={{ fontFamily: "'VT323', monospace" }}>
-                Medrenaline is the flagship annual intercollegiate academic
-                extravaganza of the esteemed Kilpauk Medical College (KMC),
-                drawing hundreds of bright medical minds from institutions
-                across Tamil Nadu.
+                Medrenaline is one of the premier national academic festivals that brings together future medical leaders from across the country to immerse themselves in clinical excellence and discovery. 
               </p>
               <p className="text-2xl md:text-3xl mb-6 leading-relaxed text-slate-100" style={{ fontFamily: "'VT323', monospace" }}>
-                Spanning over three vibrant days, Medrenaline is a celebration of
-                medical intellect and curiosity – featuring an array of engaging
-                events that cater to every academic pursuit.
+               Established in 2009, Medrenaline serves as a launchpad for aspiring researchers and an arena for sharp quizzing minds, growing into one of India’s most respected medical fests.
               </p>
               <p className="text-2xl md:text-3xl leading-relaxed text-slate-100" style={{ fontFamily: "'VT323', monospace" }}>
-                We are proud to welcome you to the 12th edition of this ocean of
-                knowledge. Come, dive into the current – compete with the
-                finest, learn with the best, and rise above the rest.
+                Now in its landmark 13th edition, the festival features an incredible line-up including dazzling medical workshops, high staking quizzes, debates and case and research paper presentations over years.
+              </p>
+              <p className="text-2xl md:text-3xl leading-relaxed text-slate-100" style={{ fontFamily: "'VT323', monospace" }}>
+                Ignite your intellects into Medrenaline ’26 and elevate your medical knowledge to the next level. 
               </p>
             </div>
           </div>
@@ -464,16 +460,10 @@ const HomePage = () => {
                 About KMC
               </h2>
               <p className="text-2xl md:text-3xl mb-6 leading-relaxed text-slate-100" style={{ fontFamily: "'VT323', monospace" }}>
-                Since its founding in 1960, Government Kilpauk Medical College
-                has stood as a paragon of medical excellence, shaping
-                generations of physicians with intellect, integrity, and purpose.
-                Over 65 distinguished years, it has earned its place among
-                Chennai's most respected medical institutions.
+                Founded in 1925 as the School of Indian Medicine, the institution transitioned to modern medicine in 1960, swiftly establishing itself as a distinguished centre for medical education in the heart of the city. 
               </p>
               <p className="text-2xl md:text-3xl leading-relaxed text-slate-100" style={{ fontFamily: "'VT323', monospace" }}>
-                With a student-focused environment, exceptional faculty, and a
-                vibrant academic culture, KMC empowers students to excel in
-                medicine, research, and innovation.
+              Today, Government Kilpauk Medical College stands among the nation’s top medical institutions. With a legacy exceeding six decades, GKMC has cultivated generations of skilled professionals driving major medical advancements worldwide, while maintaining an unwavering commitment to holistic, student-centred education. Its legacy extends far beyond the realms of medicine. Across generations, KMCIans have excelled themselves in academics, arts, sports, and literature—embodying a culture of excellence that continues to define the institution. 
               </p>
             </div>
           </div>

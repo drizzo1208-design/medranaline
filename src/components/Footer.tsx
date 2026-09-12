@@ -169,7 +169,7 @@ const Footer: React.FC = () => {
                   <li className="flex items-center gap-2 justify-center md:justify-start">
                     <Mail className="h-5 w-5 text-emerald-300" />
                     <a href="mailto:medrenaline.2025@gmail.com" className="hover:text-cyan-300 transition-colors break-all">
-                      medrenaline.2025@gmail.com
+                      medrenaline.2026@gmail.com
                     </a>
                   </li>
                 </ul>
@@ -187,7 +187,7 @@ const Footer: React.FC = () => {
                   </a>
 
                   <a 
-                    href="https://chat.whatsapp.com/Lly7U7rZaXYD8LnRpZeITM?mode=ems_copy_t" 
+                    href="https://chat.whatsapp.com/Bsr0bj4SOGc273m4gNswW0?s=cl&p=a&mlu=0&ilr=4" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     title="WhatsApp Group"

@@ -6,7 +6,7 @@ import "./quiz.css";
 
 const Accommodation: React.FC = () => {
   return (
-    <div className="sonic-bg min-h-screen text-slate-100 relative">
+    <div className="sonic-bg min-h-screen text-slate-100 relative flex flex-col">
       {/* Navbar */}
       <div className="relative z-[2000]">
         <Navigation />
@@ -18,7 +18,7 @@ const Accommodation: React.FC = () => {
       </div>
 
       {/* Page Content */}
-      <main className="relative z-[100]">
+      <main className="relative z-[100] flex-1">
         {/* Page Heading */}
         <section className="pt-28 pb-10 text-center">
           <h1
@@ -36,8 +36,8 @@ const Accommodation: React.FC = () => {
         </section>
 
         {/* Modal-themed Detail Container */}
-        <section className="container mx-auto px-4 pb-16 max-w-3xl">
-          <div className="quiz-modal select-none w-full bg-[#1e1e3a]/90 backdrop-blur-sm border-2 border-slate-700 p-6 rounded-lg shadow-2xl">
+        <section className="container mx-auto px-4 pb-24 max-w-3xl">
+          <div className="accommodation-card select-none w-full bg-[#1e1e3a]/90 backdrop-blur-sm border-2 border-slate-700 p-6 rounded-lg shadow-2xl">
             
             {/* Fee Section Header */}
             <div className="my-4 text-xl space-y-1 text-center border-b border-slate-700/50 pb-4" style={{ fontFamily: "'VT323', monospace" }}>
