@@ -459,8 +459,26 @@
     padding: 25px 15px;
   }
 
+  /* TITLE + ICON */
+  .intro-title-row {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    width: 100%;
+  }
+
+  .intro-title-icon {
+    height: 55px;
+    width: auto;
+  }
+
   .intro-title {
-    letter-spacing: 2px;
+    font-size: clamp(28px, 8vw, 38px);
+    letter-spacing: -1px;
+    white-space: nowrap;
+    max-width: 100%;
   }
 
   .intro-year {
@@ -469,23 +487,18 @@
 
   .intro-message-box {
     padding: 18px 15px;
-
     margin-bottom: 25px;
-
     border-width: 3px;
   }
 
   .intro-message-box p {
     font-size: 1.35rem;
-
     line-height: 1.2;
   }
 
   .intro-start-button {
     min-width: 180px;
-
     padding: 15px 30px;
-
     font-size: 1rem !important;
   }
 
