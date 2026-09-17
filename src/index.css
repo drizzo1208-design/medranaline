@@ -409,6 +409,16 @@ nav {
 }
 
 @media (max-width: 768px) {
+  .hero {
+        background-image: linear-gradient(
+            rgba(24, 7, 55, 0.65),
+            rgba(24, 7, 55, 0.65)
+        ), url("your-background-image.png");
+
+        background-size: cover;
+        background-position: center;
+    }
+}
   .retro-cloud {
     transform: scale(0.62);
   }
