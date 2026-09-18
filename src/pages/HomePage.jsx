@@ -103,50 +103,6 @@ const HomePage = () => {
       <section className="relative min-h-[60vh] flex items-center justify-center overflow-hidden pt-20 pb-8">
         <div className="relative z-10 text-center container mx-auto px-4 max-w-6xl">
 
-          {/* Gold Bezel */}
-          <div className="gold-bezel inline-block px-5 py-4 sm:px-8 sm:py-6 mb-6 rounded-lg">
-            <div className="flex items-center justify-center gap-3">
-
-              {/* Left wing */}
-              {/*
-              <div
-                className="w-12 h-12 bg-gradient-to-br from-white to-gray-300 transform -skew-x-12 rounded-md"
-                style={{
-                  clipPath:
-                    "polygon(0 50%, 50% 0, 100% 50%, 50% 100%)",
-                }}
-              />
-              */}
-
-              {/* Center logo */}
-              {/*
-              <div className="w-20 h-20 rounded-full bg-gradient-to-br from-blue-600 via-purple-600 to-pink-600 flex items-center justify-center border-4 border-yellow-300 shadow-xl">
-                <div className="w-16 h-16 rounded-full bg-gradient-to-br from-red-600 to-orange-500 flex items-center justify-center border-2 border-white">
-                  <span
-                    className="text-2xl font-bold text-white"
-                    style={{
-                      fontFamily: "'Press Start 2P', cursive",
-                    }}
-                  >
-                    A
-                  </span>
-                </div>
-              </div>
-              */}
-
-              {/* Right wing */}
-              {/*
-              <div
-                className="w-12 h-12 bg-gradient-to-br from-white to-gray-300 transform skew-x-12 rounded-md"
-                style={{
-                  clipPath:
-                    "polygon(0 50%, 50% 0, 100% 50%, 50% 100%)",
-                }}
-              />
-              */}
-
-            </div>
-          </div>
 
           {/* ========================================= */}
           {/* MEDRENALINE LOGO + TITLE */}
