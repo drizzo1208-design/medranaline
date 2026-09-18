@@ -346,7 +346,7 @@ const HomePage = () => {
               fontFamily: "'Press Start 2P', cursive",
             }}
           >
-            Our Sponsors
+            Our previous Sponsors
           </h2>
 
           <div className="overflow-hidden">
