@@ -52,7 +52,7 @@
 //           Countdown to Medrenaline'26
 //         </h2>
 //         <p className="text-muted-foreground">
-//           September 26-28, 2025 | 9:00 AM onwards
+//           September 26-28, 202 | 9:00 AM onwards
 //         </p>
 //       </div>
       

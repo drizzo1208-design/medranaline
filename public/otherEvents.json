@@ -1,12 +1,12 @@
 {
   "events": [
     {
-      "title": "MEDULLA CASUS - MEDICINE CASE PRESENTATION",
+      "title": "MEDULLA CASUS - MEDICINE WITH PAEDS CASE PRESENTATION",
       "registrationLink": "https://forms.gle/xrUrVT2NbhziZXoE9",
       "date": "10/10/2026",
       "venue": "Medicine Lecture Hall",
       "time": "11:00 AM - 1:30 PM",
-      "rules": ["Cases can be taken from General Medicine.", "Participants are requested to take original rare cases worked up by the department in their college.", "ELIGIBILITY: 1st year MBBS to CRMI.", "There are no limitations on the number of case abstract submission from the same college."],
+      "rules": ["Cases can be taken from General Medicine and paediatrics.", "Participants are requested to take original rare cases worked up by the department in their college.", "ELIGIBILITY: 1st year MBBS to CRMI.", "There are no limitations on the number of case abstract submission from the same college."],
       "abstract_rules": ["The case must be submitted in the form of an abstract with a word limit of 600 words (PDF format).", "Abstract should contain: Title, Summary of History, Salient examination findings, Investigations, Provisional/differential diagnosis, Management, and Discussion.", "Abstract must be accompanied by a letter from the Head of the Department attesting to its authenticity.", "Name of the participant, college, and patient details should not be mentioned anywhere in the abstract.", "The abstract PDF should be labelled as 'Name of participant, College, Subject'.", "Plagiarism is prohibited and will result in immediate disqualification.", "Last date for registration and submission of abstracts: 15th September 2025."],
       "presentation_rules": ["Presentation of selected cases will take place in-person on the event date.", "The presentation should be in Microsoft PowerPoint format and can include pictures and videos.", "Presentation time is 7 minutes, followed by a viva session with the judge."],
       "registration_fees": {"abstract_submission": "Rs 150", "presentation_of_selected_cases": "Rs 350 (Inclusive of lunch)"},
@@ -48,7 +48,7 @@
     },
     {
       "title": "EXPLORA MULTIVERSA - RESEARCH PAPER PRESENTATION",
-      "registrationLink": "https://forms.gle/Ej9tqv4JCvSdpyCM6",
+      "registrationLink": "https://forms.gle/fmbtPJtadjHWtxkp7",
       "date": "10/10/2026",
       "venue": "Lecture Hall",
       "time": "9:30 AM onwards",
@@ -60,7 +60,7 @@
     },
     {
       "title": "PICTIONARE PROTOCO - RESEARCH PROTOCOL PRESENTATION",
-      "registrationLink": "https://forms.gle/fmbtPJtadjHWtxkp7",
+      "registrationLink": "https://forms.gle/Ej9tqv4JCvSdpyCM6",
       "date": "10/10/2026",
       "venue": "Lecture Hall",
       "time": "9:30 AM onwards",
