@@ -351,10 +351,11 @@ const HomePage = () => {
         </div>
       </section>
 
-      {/* Map */}
+           {/* Map */}
       <section className="py-12">
         <div className="container mx-auto px-4">
 
+          {/* Heading */}
           <h2
             className="text-3xl font-bold text-center mb-8 text-yellow-300"
             style={{
@@ -364,6 +365,7 @@ const HomePage = () => {
             Find Us
           </h2>
 
+          {/* Map Container */}
           <div
             className="
               overflow-hidden
@@ -379,13 +381,14 @@ const HomePage = () => {
             "
           >
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.471927933441!2d80.2350!3d13.0722!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5265ff5c6ff8cf%3A0x1fbb6bc6fb1df5!2sKilpauk%20Medical%20College!5e0!3m2!1sen!2sin!4v1699999999999"
+              src="https://www.google.com/maps?q=13.076573,80.2429257&z=17&output=embed"
               width="100%"
               height="450"
               style={{ border: 0 }}
               allowFullScreen
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
+              title="Kilpauk Medical College Hospital"
             />
           </div>
 
@@ -394,6 +397,7 @@ const HomePage = () => {
 
       {/* Footer */}
       <Footer />
+
     </div>
   );
 };
