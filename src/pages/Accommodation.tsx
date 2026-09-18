@@ -43,7 +43,7 @@ const Accommodation: React.FC = () => {
             <div className="my-4 text-xl space-y-1 text-center border-b border-slate-700/50 pb-4" style={{ fontFamily: "'VT323', monospace" }}>
               <p className="quiz-meta text-cyan-100 text-sm tracking-widest uppercase">Pricing Tier</p>
               <p className="quiz-meta text-yellow-200 text-3xl font-bold mt-1">
-                ₹250 <span className="text-lg text-slate-300">/ person / day</span>
+                ₹300 <span className="text-lg text-slate-300">/ person / day</span>
               </p>
               <p className="quiz-meta text-emerald-300 text-xl">📍 Allotment: Within Hostel Premises (Paid Basis)</p>
               <p className="quiz-meta text-fuchsia-300 text-xl">🍱 Includes: Breakfast & Dinner</p>
