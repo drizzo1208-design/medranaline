@@ -10,7 +10,7 @@
 //   });
 
 //   useEffect(() => {
-//     const targetDate = new Date("2025-09-26T09:00:00+05:30"); // 26th Sept 2025, 9:00 AM IST
+//     const targetDate = new Date("2026-10-08T09:00:00+05:30"); // 8th Oct 2026, 9:00 AM IST
 
 //     const updateTimer = () => {
 //       const now = new Date().getTime();
