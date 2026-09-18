@@ -74,8 +74,8 @@ const Accommodation: React.FC = () => {
                   Incharges Contact
                 </h3>
                 <ul className="list-disc pl-5 space-y-1 text-xl text-slate-200">
-                  <li>Kathir A.K - <span className="text-cyan-300">+91 9445035545</span></li>
-                  <li>Varshini - <span className="text-cyan-300">+91 9361466436</span></li>
+                  <li>Santhosh T  - <span className="text-cyan-300">6384533598</span></li>
+                  <li>Thamarai Selvi - <span className="text-cyan-300">6382182464</span></li>
                 </ul>
               </div>
 
@@ -84,7 +84,7 @@ const Accommodation: React.FC = () => {
             {/* Action Buttons styled identically to the modal layout */}
             <div className="quiz-buttons mt-6 flex justify-end gap-3 text-xl" style={{ fontFamily: "'VT323', monospace" }}>
               <a
-                href="https://docs.google.com/forms/d/e/1FAIpQLSdGilzwtzgXAsKpHsHgqGc091knJoME0TeMc2V5g0LmtJbGtw/viewform?usp=header"
+                href="https://forms.gle/QqEiwTxJ7JRHUjLg9"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="px-6 py-2.5 bg-blue-600 text-white font-semibold rounded-md inline-block text-center hover:bg-blue-700 hover:scale-105 transform transition duration-200 shadow-md"

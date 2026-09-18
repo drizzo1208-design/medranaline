@@ -54,7 +54,7 @@ const WorkshopPage = () => {
         {/* Workshop Cards Section */}
         <section className="container mx-auto pt-4 pb-16">
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 justify-items-center">
-            {workshops.map((ws) => (
+            {workshops.filter(Boolean).map((ws) => (
               <div
                 key={ws.id}
                 onClick={() => setSelectedWorkshop(ws)}
@@ -184,9 +184,11 @@ const WorkshopPage = () => {
                   REGISTRATION ENTRY
                 </h3>
                 <ul className="list-disc list-inside space-y-1 pl-2 text-slate-200">
-                  {selectedWorkshop.fees.map((f: string, i: number) => (
-                    <li key={i}>{f}</li>
-                  ))}
+                 {selectedWorkshop.fees?.map((f: string, i: number) => (
+  <li key={i}>{f}</li>
+)) ?? (
+  <li>Fee details not available</li>
+)}
                 </ul>
               </div>
 
@@ -196,9 +198,13 @@ const WorkshopPage = () => {
                   INCHARGES COMMAND
                 </h3>
                 <ul className="list-none space-y-1 pl-2 text-slate-200">
-                  {selectedWorkshop.incharges.map((c: string, i: number) => (
-                    <li key={i} className="flex items-center gap-2">📞 {c}</li>
-                  ))}
+                  {selectedWorkshop.incharges?.map((c: string, i: number) => (
+  <li key={i} className="flex items-center gap-2">
+    📞 {c}
+  </li>
+)) ?? (
+  <li>Contact details not available</li>
+)}
                 </ul>
               </div>
             </div>

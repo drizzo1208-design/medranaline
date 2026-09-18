@@ -5,9 +5,11 @@ import ParticlesBackground from "@/components/ParticlesBackground";
 import "./quiz.css";
 
 // Import event images
-import casePresentationImg from "@/assets/other_events/CasePresentation-OtherEvents.jpg";
-import medicalDebateImg from "@/assets/other_events/MedicalDebate-OtherEvents.jpg";
-import researchPaperImg from "@/assets/other_events/ResearchPaper-OtherEvents.jpg";
+import casePresentationImg from "@/assets/other_events/CasePresentation-OtherEvents.png";
+import medicalDebateImg from "@/assets/other_events/MedicalDebate-OtherEvents.png";
+import researchPaperImg from "@/assets/other_events/ResearchPaper-OtherEvents.png";
+import researchProtocolImg from "@/assets/other_events/ResearchProtocol-OtherEvents.png";
+import symposiumImg from "@/assets/other_events/Symposium-OtherEvents.png";
 
 // =========================================
 // TypeScript Interfaces
@@ -99,35 +101,37 @@ const OtherEventsPage: React.FC = () => {
     // =========================================
 
     const getEventImage = (): string => {
-      const upperCaseTitle =
-        event.title.toUpperCase();
+  const upperCaseTitle = event.title.toUpperCase();
 
-      if (
-        upperCaseTitle.includes(
-          "CASE PRESENTATION"
-        )
-      ) {
-        return casePresentationImg;
-      }
+  // CASE PRESENTATIONS
+  if (upperCaseTitle.includes("CASE PRESENTATION")) {
+    return casePresentationImg;
+  }
 
-      if (
-        upperCaseTitle.includes(
-          "MEDICAL DEBATE"
-        )
-      ) {
-        return medicalDebateImg;
-      }
+  // MEDICAL DEBATE
+  if (upperCaseTitle.includes("MEDICAL DEBATE")) {
+    return medicalDebateImg;
+  }
 
-      if (
-        upperCaseTitle.includes(
-          "RESEARCH PAPER"
-        )
-      ) {
-        return researchPaperImg;
-      }
+  // RESEARCH PAPER PRESENTATION
+  if (upperCaseTitle.includes("RESEARCH PAPER")) {
+    return researchPaperImg;
+  }
 
-      return "/placeholder.svg";
-    };
+  // RESEARCH PROTOCOL PRESENTATION
+  if (upperCaseTitle.includes("RESEARCH PROTOCOL")) {
+    return researchProtocolImg;
+  }
+
+  // SYMPOSIUM
+  if (upperCaseTitle.includes("SYMPOSIA CHRONICLES")) {
+    return symposiumImg;
+  }
+
+  return "/placeholder.svg";
+};
+
+
 
     return (
       <div

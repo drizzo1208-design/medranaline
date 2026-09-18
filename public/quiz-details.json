@@ -32,7 +32,7 @@
         "Tanushri Badri - 9791044711"
       ],
       "registrationLink": "https://forms.gle/mN6K157QpL4TcACD9",
-      "image": "/images/senior-quiz.jpg"
+      "image": "/images/quiz-senior.png"
     },
     {
       "id": "symbiosis26-junior",
@@ -68,8 +68,7 @@
         "Harisankar Das - 9043186174"
       ],
       "registrationLink": "https://forms.gle/S83rLy4aPFgRVwPh8",
-      "image": "/images/junior-quiz.jpg"
-    },
+    "image": "/images/quiz-senior.png"    },
     {
       "id": "Galenus'26-system",
       "title": "GALENUS’26 -\n system Quiz",
@@ -102,7 +101,7 @@
         "Fazil - 9952177972"
       ],
       "registrationLink": "https://forms.gle/HJ2DKdVUnbhjaPAj6",
-      "image": "/images/junior-quiz.jpg"
+      "image": "/images/quiz-senior.png"
     }
   ]
 }
