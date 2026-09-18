@@ -2,7 +2,6 @@ import { useNavigate } from "react-router-dom";
 import Navigation from "../components/Navigation";
 import Footer from "../components/Footer";
 import CountdownTimer from "../components/CountdownTimer";
-import UpdatesScroller from "../components/UpdatesScroller";
 import { Button } from "../components/ui/button";
 import { Card } from "../components/ui/card";
 import {
@@ -216,13 +215,6 @@ const HomePage = () => {
       <section className="py-8">
         <div className="container mx-auto px-4">
           <CountdownTimer />
-        </div>
-      </section>
-
-      {/* Updates */}
-      <section className="py-8">
-        <div className="container mx-auto px-4">
-          <UpdatesScroller />
         </div>
       </section>
 
