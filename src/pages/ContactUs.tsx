@@ -35,7 +35,7 @@ const ContactUs: React.FC = () => {
                 className="text-xl md:text-2xl font-bold text-yellow-200"
                 style={{ fontFamily: "'Press Start 2P', cursive", fontSize: '14px' }}
               >
-                KMC STUDENT COUNCIL 2025 - 26
+                KMC STUDENT COUNCIL 2026 - 27
               </h2>
               <a
                 href="mailto:studentcouncilkmc@gmail.com"
@@ -62,16 +62,16 @@ const ContactUs: React.FC = () => {
                     className="text-xl font-bold text-yellow-200"
                     style={{ fontFamily: "'Press Start 2P', cursive", fontSize: '14px' }}
                   >
-                    NARESH R
+                    SANTHOSH S
                   </h4>
                   <div className="mt-4 space-y-2 text-slate-100 text-xl" style={{ fontFamily: "'VT323', monospace" }}>
-                    <a href="tel:8939276895" className="flex items-center justify-center gap-2.5 hover:text-blue-300 transition-colors">
+                    <a href="tel:9962826457" className="flex items-center justify-center gap-2.5 hover:text-blue-300 transition-colors">
                       <Phone className="h-5 w-5 text-cyan-300" />
-                      <span>8939276895</span>
+                      <span>9962826457</span>
                     </a>
-                    <a href="mailto:naresh123ch37@gmail.com" className="flex items-center justify-center gap-2.5 hover:text-blue-300 transition-colors">
+                    <a href="mailto:drizzo.1208@gmail.com" className="flex items-center justify-center gap-2.5 hover:text-blue-300 transition-colors">
                       <Mail className="h-5 w-5 text-fuchsia-300" />
-                      <span>naresh123ch37@gmail.com</span>
+                      <span>drizzo.1208@gmail.com</span>
                     </a>
                   </div>
                 </div>
@@ -82,16 +82,16 @@ const ContactUs: React.FC = () => {
                     className="text-xl font-bold text-yellow-200"
                     style={{ fontFamily: "'Press Start 2P', cursive", fontSize: '14px' }}
                   >
-                    MAHASHWETHHA Y
+                    VEENA SRI 
                   </h4>
                   <div className="mt-4 space-y-2 text-slate-100 text-xl" style={{ fontFamily: "'VT323', monospace" }}>
-                    <a href="tel:7448833936" className="flex items-center justify-center gap-2.5 hover:text-blue-300 transition-colors">
+                    <a href="tel:8072600653" className="flex items-center justify-center gap-2.5 hover:text-blue-300 transition-colors">
                       <Phone className="h-5 w-5 text-cyan-300" />
-                      <span>7448833936</span>
+                      <span>8072600653</span>
                     </a>
-                    <a href="mailto:mahashwethha@gmail.com" className="flex items-center justify-center gap-2.5 hover:text-blue-300 transition-colors">
+                    <a href="mailto:veena.gkmc@gmail.com" className="flex items-center justify-center gap-2.5 hover:text-blue-300 transition-colors">
                       <Mail className="h-5 w-5 text-fuchsia-300" />
-                      <span>mahashwethha@gmail.com</span>
+                      <span>veena.gkmc@gmail.com</span>
                     </a>
                   </div>
                 </div>
@@ -107,12 +107,12 @@ const ContactUs: React.FC = () => {
                 Write down to Us
               </h3>
               <a
-                href="mailto:medrenaline.2025@gmail.com"
+                href="mailto:medrenaline.2026@gmail.com"
                 className="text-2xl text-blue-200 hover:underline flex items-center justify-center gap-2 mt-3 font-medium"
                 style={{ fontFamily: "'VT323', monospace" }}
               >
                 <Mail className="h-5 w-5" />
-                medrenaline.2025@gmail.com
+                medrenaline.2026@gmail.com
               </a>
             </div>
 
