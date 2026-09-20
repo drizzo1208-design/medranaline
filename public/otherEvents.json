@@ -38,7 +38,7 @@
     },
     {
       "title": "REBUTTAL ROYALE - MEDICAL DEBATE",
-      "registrationLink": "https://forms.gle/3Sp7f5R1XwkJv92M8",
+      "registrationLink": "https://forms.gle/LZDXGBdEGVLncVQU8",
       "date": "11/10/2026",
       "venue": "Lecture Hall",
       "time": "9:30 AM onwards",
@@ -48,14 +48,14 @@
     },
      {
       "title": "MEDTALES - CLINICAL STORY TELLING",      
-      "registrationLink": "https://forms.gle/iSUXWJvcvnQG5jAL7",
+      "registrationLink": "https://forms.gle/3Sp7f5R1XwkJv92M8",
       "date": "09/10/2026",
       "venue": "Lecture Hall",
       "time": "9:30 AM - 11:00AM",
       "rules": ["The story can be written to explain any concept in the MBBS curriculum", "ELIGIBILITY: 1st year MBBS to CRMI.", "There are no limitations on the number of entriesfrom the same college."],
       "abstract_rules": ["The story should be submitted as a PDF through the Google Form", "It should contain: Title,A short introduction to the concept upon which the story is based, A story clearly explaining a clinical concept, Word limit: 750 words", "The PDF should be titled “Name of Participant – College", "The PDF should be titled “Name of Participant – College.", "The last date for submission is 27/09/2026","kindly verify rulebook for complete guidlines."],
       "presentation_rules": ["The presentation of the selected stories through PowerPoint will take place on the mentioned date and time", "The presentation will be judged based on the accuracy of clinical correlation and the creativity of the story", "Each participant will be given a maximum of 7 minutes for the presentation, followed by a question-and-answer session with the judge.","The judge’s decision will be final and binding."],
-      "registration_fees": {"abstract_submission": "Rs 50", "presentation_of_selected_cases": "Rs 200"},
+      "registration_fees": {"submission": "Rs 50", "presentation_of_selected_story": "Rs 200"},
       "incharges": [{"name": "Rishika ", "phone": "6379511523"}, {"name": "Lavanya", "phone": "6369155289"}]
     },
         {
@@ -75,7 +75,7 @@
 "வென்டிலேட்டர் - கடன் வாங்கிய மூச்சு"
   ],
   "registration_fees": {
-    "abstract_submission": "Rs 50 per participant"
+    "submission": "Rs 50 "
   },
   "incharges": [
     { "name": "Anbaraasu", "phone": "9445974387" },
@@ -100,7 +100,7 @@
     "A Letter to an Unborn Child"
   ],
   "registration_fees": {
-    "abstract_submission": "Rs 50 per participant"
+    "submission": "Rs 50 "
   },
   "incharges": [
     { "name": "Anbaraasu", "phone": "9445974387" },
