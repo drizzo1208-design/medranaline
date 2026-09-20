@@ -4,12 +4,18 @@ import Footer from "@/components/Footer";
 import ParticlesBackground from "@/components/ParticlesBackground";
 import "./quiz.css";
 
-// Import event images
+// =========================================
+// Import Event Images
+// =========================================
+
 import casePresentationImg from "@/assets/other_events/CasePresentation-OtherEvents.png";
 import medicalDebateImg from "@/assets/other_events/MedicalDebate-OtherEvents.png";
 import researchPaperImg from "@/assets/other_events/ResearchPaper-OtherEvents.png";
 import researchProtocolImg from "@/assets/other_events/ResearchProtocol-OtherEvents.png";
 import symposiumImg from "@/assets/other_events/Symposium-OtherEvents.png";
+import englishPoetryImg from "@/assets/other_events/EnglishPoetry-OtherEvents.png";
+import tamilPoetryImg from "@/assets/other_events/TamilPoetry-OtherEvents.png";
+import storyTellingImg from "@/assets/other_events/StoryTelling-OtherEvents.png";
 
 // =========================================
 // TypeScript Interfaces
@@ -39,6 +45,7 @@ interface EventData {
 
 interface EventCardProps {
   event: EventData;
+  index: number;
 }
 
 // =========================================
@@ -49,35 +56,150 @@ const OtherEventsPage: React.FC = () => {
   const [events, setEvents] = useState<EventData[]>([]);
   const [selectedEvent, setSelectedEvent] =
     useState<EventData | null>(null);
+    const searchParams = new URLSearchParams(window.location.search);
+
+const selectedCategory =
+  searchParams.get("category") || "all";
+
+// =========================================
+// Fetch Events
+// =========================================
+
+useEffect(() => {
+  const fetchEvents = async (): Promise<void> => {
+    try {
+      const res = await fetch("/otherEvents.json");
+
+      if (!res.ok) {
+        throw new Error(`HTTP error! status: ${res.status}`);
+      }
+
+      const data = await res.json();
+
+      setEvents(data.events || []);
+    } catch (error) {
+      console.error("Failed to load events:", error);
+    }
+  };
+
+  fetchEvents();
+}, []);
+
+// =========================================
+// Filter Events
+// =========================================
+
+const filteredEvents = events.filter((event) => {
+  const title = event.title.toUpperCase();
+
+  // SHOW EVERYTHING
+  if (selectedCategory === "all") {
+    return true;
+  }
+
+  // PRESENTATION
+  if (selectedCategory === "presentation") {
+    return (
+      title.includes("CASE PRESENTATION") ||
+      title.includes("RESEARCH PAPER") ||
+      title.includes("RESEARCH PROTOCOL")
+    );
+  }
+
+  // SYMPOSIUM
+  if (selectedCategory === "symposium") {
+    return (
+      title.includes("SYMPOSIUM") ||
+      title.includes("SYMPOSIA CHRONICLES")
+    );
+  }
+
+  // LITERARY EVENTS
+  if (selectedCategory === "literary") {
+    return (
+      title.includes("MEDICAL DEBATE") ||
+      title.includes("ENGLISH POETRY") ||
+      title.includes("தமிழ்க் கவிதை") ||
+      title.includes("STORY TELLING")
+    );
+  }
+
+  return true;
+});
+  // =========================================
+  // Identify Event Category
+  // =========================================
+  //
+  // These names will be used in the URL:
+  //
+  // #case-presentation
+  // #symposium
+  // #research
+  // #literary
+  //
+  // =========================================
+
+  const getEventCategory = (event: EventData): string => {
+    const title = event.title.toUpperCase();
+
+    if (title.includes("CASE PRESENTATION")) {
+      return "case-presentation";
+    }
+
+    if (
+      title.includes("SYMPOSIUM") ||
+      title.includes("SYMPOSIA CHRONICLES")
+    ) {
+      return "symposium";
+    }
+
+    if (
+      title.includes("RESEARCH PAPER") ||
+      title.includes("RESEARCH PROTOCOL")
+    ) {
+      return "research";
+    }
+
+    if (title.includes("MEDICAL DEBATE")) {
+      return "medical-debate";
+    }
+
+    return "other";
+  };
 
   // =========================================
-  // Fetch Events
+  // Scroll To Category From URL
+  // =========================================
+  //
+  // Example:
+  //
+  // /other-events#case-presentation
+  //
+  // will automatically scroll to the first
+  // Case Presentation card.
+  //
   // =========================================
 
   useEffect(() => {
-    const fetchEvents = async (): Promise<void> => {
-      try {
-        const res = await fetch("/otherEvents.json");
+    if (events.length === 0) return;
 
-        if (!res.ok) {
-          throw new Error(
-            `HTTP error! status: ${res.status}`
-          );
-        }
+    const hash = window.location.hash.replace("#", "");
 
-        const data = await res.json();
+    if (!hash) return;
 
-        setEvents(data.events || []);
-      } catch (error) {
-        console.error(
-          "Failed to load events:",
-          error
-        );
+    const timer = setTimeout(() => {
+      const target = document.getElementById(hash);
+
+      if (target) {
+        target.scrollIntoView({
+          behavior: "smooth",
+          block: "start",
+        });
       }
-    };
+    }, 200);
 
-    fetchEvents();
-  }, []);
+    return () => clearTimeout(timer);
+  }, [events]);
 
   // =========================================
   // Event Card
@@ -85,11 +207,11 @@ const OtherEventsPage: React.FC = () => {
 
   const EventCard: React.FC<EventCardProps> = ({
     event,
+    index,
   }) => {
     const titleParts = event.title.split(" - ");
 
-    const mainTitle =
-      titleParts[0] || event.title;
+    const mainTitle = titleParts[0] || event.title;
 
     const subTitle =
       titleParts.length > 1
@@ -100,10 +222,10 @@ const OtherEventsPage: React.FC = () => {
     // Select Event Image
     // =========================================
 
-    const getEventImage = (): string => {
+   const getEventImage = (): string => {
   const upperCaseTitle = event.title.toUpperCase();
 
-  // CASE PRESENTATIONS
+  // CASE PRESENTATION
   if (upperCaseTitle.includes("CASE PRESENTATION")) {
     return casePresentationImg;
   }
@@ -113,33 +235,74 @@ const OtherEventsPage: React.FC = () => {
     return medicalDebateImg;
   }
 
-  // RESEARCH PAPER PRESENTATION
+  // ENGLISH POETRY
+  if (upperCaseTitle.includes("ENGLISH POETRY")) {
+    return englishPoetryImg;
+  }
+
+  // TAMIL POETRY
+  if (upperCaseTitle.includes("தமிழ்க் கவிதை")) {
+    return tamilPoetryImg;
+  }
+
+  // STORY TELLING
+  if (upperCaseTitle.includes("STORY TELLING")) {
+    return storyTellingImg;
+  }
+
+  // RESEARCH PAPER
   if (upperCaseTitle.includes("RESEARCH PAPER")) {
     return researchPaperImg;
   }
 
-  // RESEARCH PROTOCOL PRESENTATION
+  // RESEARCH PROTOCOL
   if (upperCaseTitle.includes("RESEARCH PROTOCOL")) {
     return researchProtocolImg;
   }
 
   // SYMPOSIUM
-  if (upperCaseTitle.includes("SYMPOSIA CHRONICLES")) {
+  if (
+    upperCaseTitle.includes("SYMPOSIUM") ||
+    upperCaseTitle.includes("SYMPOSIA CHRONICLES")
+  ) {
     return symposiumImg;
   }
 
+  // FALLBACK
   return "/placeholder.svg";
 };
 
+    // =========================================
+    // Determine Category
+    // =========================================
 
+    const category = getEventCategory(event);
+
+    // Find the first event belonging to this category.
+    // Only that card gets the category ID.
+
+    const firstIndexOfCategory = events.findIndex(
+      (item) => getEventCategory(item) === category
+    );
+
+    const isFirstOfCategory =
+      firstIndexOfCategory === index;
+
+    // =========================================
+    // Render Event Card
+    // =========================================
 
     return (
       <div
-        onClick={() =>
-          setSelectedEvent(event)
+        id={
+          isFirstOfCategory && category !== "other"
+            ? category
+            : undefined
         }
+        onClick={() => setSelectedEvent(event)}
         className="
           retro-event-card
+          scroll-mt-32
           relative
           overflow-hidden
           w-full
@@ -201,8 +364,7 @@ const OtherEventsPage: React.FC = () => {
                 leading-relaxed
               "
               style={{
-                fontFamily:
-                  "'Press Start 2P', cursive",
+                fontFamily: "'Press Start 2P', cursive",
                 fontSize: "14px",
               }}
             >
@@ -218,8 +380,7 @@ const OtherEventsPage: React.FC = () => {
                   mt-3
                 "
                 style={{
-                  fontFamily:
-                    "'VT323', monospace",
+                  fontFamily: "'VT323', monospace",
                 }}
               >
                 {subTitle}
@@ -290,11 +451,10 @@ const OtherEventsPage: React.FC = () => {
               text-yellow-300
             "
             style={{
-              fontFamily:
-                "'Press Start 2P', cursive",
+              fontFamily: "'Press Start 2P', cursive",
             }}
           >
-            Presentation and Debate Hub
+          GUILD HALL
           </h1>
 
           <p
@@ -305,8 +465,7 @@ const OtherEventsPage: React.FC = () => {
               text-cyan-100
             "
             style={{
-              fontFamily:
-                "'VT323', monospace",
+              fontFamily: "'VT323', monospace",
             }}
           >
             Choose a card to reveal details
@@ -337,10 +496,11 @@ const OtherEventsPage: React.FC = () => {
               justify-items-center
             "
           >
-            {events.map((event, idx) => (
+            {filteredEvents.map((event, idx) => (
               <EventCard
                 key={`${event.title}-${idx}`}
                 event={event}
+                index={idx}
               />
             ))}
           </div>
@@ -363,11 +523,12 @@ const OtherEventsPage: React.FC = () => {
         >
           <div
             className="other-events-modal"
-            onClick={(e: React.MouseEvent<HTMLDivElement>) =>
-              e.stopPropagation()
-            }
+            onClick={(
+              e: React.MouseEvent<HTMLDivElement>
+            ) => e.stopPropagation()}
           >
             {/* Modal Title */}
+
             <h2
               className="quiz-title"
               style={{
@@ -378,7 +539,10 @@ const OtherEventsPage: React.FC = () => {
               {selectedEvent.title}
             </h2>
 
-            {/* Event Information */}
+            {/* =====================================
+                Event Information
+                ===================================== */}
+
             <div
               className="
                 my-4
@@ -408,9 +572,10 @@ const OtherEventsPage: React.FC = () => {
               )}
             </div>
 
-            {/* Event Details
-                No separate scrollbar here.
-                The entire popup scrolls. */}
+            {/* =====================================
+                Event Details
+                ===================================== */}
+
             <div
               className="
                 space-y-4
@@ -420,7 +585,9 @@ const OtherEventsPage: React.FC = () => {
                 fontFamily: "'VT323', monospace",
               }}
             >
+
               {/* Rules */}
+
               {selectedEvent.rules &&
                 selectedEvent.rules.length > 0 && (
                   <div>
@@ -429,14 +596,19 @@ const OtherEventsPage: React.FC = () => {
                     </h3>
 
                     <ul className="list-disc pl-5">
-                      {selectedEvent.rules.map((item, i) => (
-                        <li key={i}>{item}</li>
-                      ))}
+                      {selectedEvent.rules.map(
+                        (item, i) => (
+                          <li key={i}>
+                            {item}
+                          </li>
+                        )
+                      )}
                     </ul>
                   </div>
                 )}
 
               {/* Abstract Submission Rules */}
+
               {selectedEvent.abstract_rules &&
                 selectedEvent.abstract_rules.length > 0 && (
                   <div>
@@ -447,7 +619,9 @@ const OtherEventsPage: React.FC = () => {
                     <ul className="list-disc pl-5">
                       {selectedEvent.abstract_rules.map(
                         (item, i) => (
-                          <li key={i}>{item}</li>
+                          <li key={i}>
+                            {item}
+                          </li>
                         )
                       )}
                     </ul>
@@ -455,6 +629,7 @@ const OtherEventsPage: React.FC = () => {
                 )}
 
               {/* Presentation Rules */}
+
               {selectedEvent.presentation_rules &&
                 selectedEvent.presentation_rules.length > 0 && (
                   <div>
@@ -465,7 +640,9 @@ const OtherEventsPage: React.FC = () => {
                     <ul className="list-disc pl-5">
                       {selectedEvent.presentation_rules.map(
                         (item, i) => (
-                          <li key={i}>{item}</li>
+                          <li key={i}>
+                            {item}
+                          </li>
                         )
                       )}
                     </ul>
@@ -473,6 +650,7 @@ const OtherEventsPage: React.FC = () => {
                 )}
 
               {/* Registration Fees */}
+
               {selectedEvent.registration_fees &&
                 Object.keys(
                   selectedEvent.registration_fees
@@ -498,6 +676,7 @@ const OtherEventsPage: React.FC = () => {
                 )}
 
               {/* Incharges */}
+
               {selectedEvent.incharges &&
                 selectedEvent.incharges.length > 0 && (
                   <div>
@@ -518,7 +697,10 @@ const OtherEventsPage: React.FC = () => {
                 )}
             </div>
 
-            {/* Buttons */}
+            {/* =====================================
+                Buttons
+                ===================================== */}
+
             <div
               className="
                 quiz-buttons

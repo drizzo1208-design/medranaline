@@ -38,7 +38,7 @@
     },
     {
       "title": "REBUTTAL ROYALE - MEDICAL DEBATE",
-      "registrationLink": "https://forms.gle/LZDXGBdEGVLncVQU8",
+      "registrationLink": "https://forms.gle/3Sp7f5R1XwkJv92M8",
       "date": "11/10/2026",
       "venue": "Lecture Hall",
       "time": "9:30 AM onwards",
@@ -46,7 +46,68 @@
       "registration_fees": {"per_team": "Rs 340 (inclusive of lunch)"},
       "incharges": [{"name": "Shalini", "phone": "9042544168"}, {"name": "Reema Shurti", "phone": "7358116215"}]
     },
+     {
+      "title": "MEDTALES - CLINICAL STORY TELLING",      
+      "registrationLink": "https://forms.gle/iSUXWJvcvnQG5jAL7",
+      "date": "09/10/2026",
+      "venue": "Lecture Hall",
+      "time": "9:30 AM - 11:00AM",
+      "rules": ["The story can be written to explain any concept in the MBBS curriculum", "ELIGIBILITY: 1st year MBBS to CRMI.", "There are no limitations on the number of entriesfrom the same college."],
+      "abstract_rules": ["The story should be submitted as a PDF through the Google Form", "It should contain: Title,A short introduction to the concept upon which the story is based, A story clearly explaining a clinical concept, Word limit: 750 words", "The PDF should be titled “Name of Participant – College", "The PDF should be titled “Name of Participant – College.", "The last date for submission is 27/09/2026","kindly verify rulebook for complete guidlines."],
+      "presentation_rules": ["The presentation of the selected stories through PowerPoint will take place on the mentioned date and time", "The presentation will be judged based on the accuracy of clinical correlation and the creativity of the story", "Each participant will be given a maximum of 7 minutes for the presentation, followed by a question-and-answer session with the judge.","The judge’s decision will be final and binding."],
+      "registration_fees": {"abstract_submission": "Rs 50", "presentation_of_selected_cases": "Rs 200"},
+      "incharges": [{"name": "Rishika ", "phone": "6379511523"}, {"name": "Lavanya", "phone": "6369155289"}]
+    },
+        {
+  "title": "நாடியின் நாதம் - தமிழ்க் கவிதை",
+  "registrationLink": "https://forms.gle/7Duxig5yjeDuqvK37",
+  "rules": [
+    "ஒரு கல்லூரியில் இருந்து எத்தனை போட்டியாளர்கள் வேண்டுமானாலும் பங்கேற்கலாம்",
+    "போட்டியாளர்கள் தங்களது படைப்பினை இணையவழியில் சமர்ப்பிக்க வேண்டும்.",
+    "ஒரு போட்டியாளர் அதிகபட்சமாக ஒரு படைப்பினை சமர்பிக்கலாம்கவிதை 8 முதல் 20 வரிகளுக்கு உட்பட்டு இருக்க வேண்டும்",
+    "பிறமொழி கலப்பின்றி சொந்த நடையில் இருத்தல் வேண்டும்.",
+    "கவிதையின் ஒரு பகுதியோ அல்லது முழு கவிதையோ வேறொரு படைப்பிலிருந்து எடுக்கப்பட்டிருந்தால் தகுதி நீக்கம் செய்யப்படும்.",
+    "தலைப்பை ஒட்டி எழுத வேண்டும். கவிதை மருத்துவம் சார்ந்ததாக இருத்தல் அவசியமாகும். நடுவரின் தீர்ப்பே இறுதியானது"
+  ],
+  "தலைப்புகள்": [
+   "ஊசி முனையில் ஓர் உயிர்த் துளி",
+"குணப்படுத்தும் கைகள் காயப்படுவதேன்",
+"வென்டிலேட்டர் - கடன் வாங்கிய மூச்சு"
+  ],
+  "registration_fees": {
+    "abstract_submission": "Rs 50 per participant"
+  },
+  "incharges": [
+    { "name": "Anbaraasu", "phone": "9445974387" },
+    { "name": "Sumithra", "phone": "6382245373" }
+  ]
+},
     {
+  "title": "BATTLE OF VERSES - ENGLISH POETRY",
+  "registrationLink": "https://forms.gle/wRqiLGAbC2Uyqr3F8",
+  "rules": [
+    "Format: PDF submitted via Google Forms containing the allotted register number of the participant, title of the poem, and topic of the poem.",
+    "The use of offensive language and plagiarism will lead to disqualification.",
+    "Word limit: 500 words.",
+    "A title is compulsory.",
+    "Participants are free to interpret the topic in their own way and are granted full stylistic liberty, but should not deviate from the given topics.",
+    "The judges’ decision is final and binding"
+  ],
+  "theme": [
+    "The Price of Glory (Featuring the increasing mental health burden among medical professionals)",
+    "Bodies Born for the Grave (The mortal nature of human life)",
+    "The Hypochondriacal Paradox",
+    "A Letter to an Unborn Child"
+  ],
+  "registration_fees": {
+    "abstract_submission": "Rs 50 per participant"
+  },
+  "incharges": [
+    { "name": "Anbaraasu", "phone": "9445974387" },
+    { "name": "Sumithra", "phone": "6382245373" }
+  ]
+}
+  ,{
       "title": "EXPLORA MULTIVERSA - RESEARCH PAPER PRESENTATION",
       "registrationLink": "https://forms.gle/fmbtPJtadjHWtxkp7",
       "date": "10/10/2026",
@@ -64,7 +125,7 @@
       "date": "10/10/2026",
       "venue": "Lecture Hall",
       "time": "9:30 AM onwards",
-      "rules": ["ELIGIBILITY: Open to all MBBS students from 1st MBBS to CRMI.", "The participant must be a part of the submitted research. Multiple entries are allowed, but only one will be selected per participant.", "Research papers of any topic are accepted.", "The study must be completed within the last 3 years", "Attach the Institute ethics committee certificate / clearance (IEC) to the form.", "Institutional Ethics Committee (IEC) approval must have been obtained before the study.", "Plagiarism or lack of appropriate citations will result in immediate disqualification.", "Letter from hod of the study department (confirming that the research has not been commenced)","kindly verify rulebook for complete guidlines."],
+      "rules": ["ELIGIBILITY: Open to all MBBS students from 1st MBBS to CRMI.", "Multiple entries are allowed, but only one will be selected per participant.", "Research protocol of any topic are accepted.", "Plagiarism or lack of appropriate citations will result in immediate disqualification.", "Letter from hod of the study department (confirming that the research has not been commenced)","kindly verify rulebook for complete guidlines."],
       "abstract_rules": ["Submitted abstract should contain: Title, Background/Introduction, Objectives, Materials and Methods, Results, Conclusion, and References.", "Word limit is 600 words (not including references).", "Abstract must be submitted in PDF format with the registration form.", "PDF file should be named as 'participant name_collegename_year of study_short topic'.", "Abstracts are judged on clarity, suitability of methods, and objective results."],
       "presentation_rules": ["Presentations for selected abstracts will be held in-person.", "Presentations must be done on Microsoft PowerPoint and will be followed by a viva-voce session."],
       "registration_fees": {"abstract_submission": "Rs 150", "if_selected_for_finals": "Rs 350 (Inclusive of lunch)"},

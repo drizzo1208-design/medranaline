@@ -5,7 +5,7 @@
       "title": "POINT OPHTHALMIA",
       "subtitle": "OPHTHALMOLOGY WORKSHOP",
       "conductedBy": "DEPT OF OPHTHALMOLOGY, GKMCH",
-      "date": "09/10/2026 Thursday",
+      "date": "09/10/2026 Friday",
       "time": "9:00 AM to 1:00 PM",
       "venue": "OP AUDITORIUM, GKMCH",
       "details": [
@@ -545,13 +545,13 @@
       "subtitle": "RADIOLOGY WORKSHOP",
       "conductedBy": "DEPT OF RADIOLOGY, GKMCH",
       "date": "09/10/26, Friday",
-      "time": "08:30 AM to 04:00 PM",
-      "venue": "Dept of Radiology, GKMCH",
+      "time": "9:00 AM TO 1:00 PM",
+      "venue": "OP CONFERENCE HALL, GKMCH",
       "details": [
         {
           "heading": "LECTURE ",
           "points": [
-            "Algorithmic interpretation of chest X-ray, Rapid, emergency diagnosis of CT- Brain, Fundamentals of ultrasonography, Interventional radiology procedures"
+            "Algorithmic interpretation of chest X-ray, Rapid, emergency diagnosis of CT and MRI Brain, Fundamentals of ultrasonography, Interventional radiology procedures"
           ]
         },
         {

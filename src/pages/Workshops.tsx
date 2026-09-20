@@ -173,7 +173,7 @@ const WorkshopPage = () => {
               {selectedWorkshop.slotsAvailable && (
                 <div className="bg-cyan-950/40 border-2 border-cyan-600/50 p-3 rounded-md text-center">
                   <p className="text-xl text-cyan-300 font-bold tracking-wide">
-                    🎟 Slots Remaining: {selectedWorkshop.slotsAvailable}
+                    🎟 TOTAL SLOTS: {selectedWorkshop.slotsAvailable}
                   </p>
                 </div>
               )}
